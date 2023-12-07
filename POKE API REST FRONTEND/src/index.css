@@ -1,0 +1,130 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center; /* Centra verticalmente los elementos */
+  background-color: red;
+  padding: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.pokedex-logo {
+  max-height: 40px; /* Altura máxima del logo de Pokémon */
+  margin-right: 10px; /* Margen derecho para separar el logo del texto */
+}
+
+.pokemon-list { /*Engloba a todos los pokemones*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 100px;
+  font-family: Consolas
+}
+
+.pokemon-card {
+  border-radius: 1rem;
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, .25);
+  padding-block: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.pokemon-number-back {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 6rem;
+  font-weight: 800;
+  z-index: -1;
+  color: rgb(212, 212, 212);
+}
+
+.pokemon-imagen {
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centro verticalmente la imagen */
+}
+
+.pokemon-imagen img {
+  width: 100%;
+  max-width: 6rem;
+}
+
+.pokemon-info {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding-inline: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.pokemon-contenedor {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-power {
+  background-color: rgb(212, 212, 212);
+  padding: .25rem .5rem;
+  border-radius: 100vmax;
+  font-size: .75rem;
+  font-weight: 600;
+  font-family: Consolas;
+  margin-top: .5rem; /* Espaciado entre el nombre y el número */
+}
+
+.pokemon-nombre {
+  font-size: 1.4rem;
+}
+
+.pokemon-tipo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  border-radius: 100vmax;
+  padding: .5rem;
+  font-size: .75rem;
+  font-weight: 700;
+  justify-content: center;
+  margin-top: .5rem; /* Espaciado entre el número y los tipos */
+}
+
+.tipo-planta {
+  background-color: greenyellow;
+  color: #000000;
+}
+
+.tipo-fuego {
+  background-color: rgb(255, 138, 4);
+  color: #000000;
+  border-radius: 100vmax;
+}
+
+.tipo-veneno {
+  background-color: rgb(197, 14, 197);
+  color: #fff;
+}
+
+.tipo-volador {
+  background-color: mediumslateblue;
+  color: #000000;
+}
+
+.tipo-electrico {
+  background-color: rgb(248, 248, 49);
+  color: #000000;
+}
